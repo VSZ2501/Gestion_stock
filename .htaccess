@@ -1,0 +1,7 @@
+Options -Indexes
+
+# Interdire l acces direct aux dossiers sensibles
+<FilesMatch "\.(sql|log)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
